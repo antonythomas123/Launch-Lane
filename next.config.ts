@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
     // domains: ["github.com", "avatars.githubusercontent.com", "placehold.co"],
     // formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    ppr: 'incremental',
+  },
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: 'bottom-right'
+  }
 };
 
 export default nextConfig;
